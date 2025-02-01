@@ -1,0 +1,69 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Diana ❤️</title>
+    <style>
+        body {
+            background-color: #ffebf0;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 2.5em;
+            animation: fadeIn 2s;
+        }
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .buttons {
+            margin-top: 30px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .yes {
+            background-color: #ff4081;
+            color: white;
+        }
+        .no {
+            background-color: #cccccc;
+            color: black;
+        }
+        .no:hover {
+            position: absolute;
+            left: calc(10% + 80% * random());
+            top: calc(10% + 80% * random());
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mi amada Diana ❤️</h1>
+        <p>Desde que llegaste a mi vida, todo es más hermoso. Hoy quiero preguntarte algo muy especial...</p>
+        <p class="heart">💖</p>
+        <h2>¿Quieres ser mi San Valentín? 💘</h2>
+        <div class="buttons">
+            <button class="yes" onclick="alert('¡Sabía que dirías que sí! Te amo ❤️')">Sí, mi amor 😍</button>
+            <button class="no" onmouseover="this.style.left=Math.random()*90+'%';this.style.top=Math.random()*90+'%';">No 😢</button>
+        </div>
+    </div>
+</body>
+</html>
